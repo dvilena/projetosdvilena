@@ -1,13 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
+	<title>Hotel DV</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for ('static', filename='estilo.css') }}">
 </head>
-
 <body>
 
-    <p>Primeiro site</p>
-    <a href="{{contatos.html}}"cliqueaqui></a>
+	<div id="container"><!-- inicio container-->
+		<div id="topo"><!-- inicio topo-->
+
+			<div id="area-logo">
+				<h1 img class="logo" src="{{ url_for ('static', filename='topo-imagem-principal.png') }}">
+					<a href="">Hotel DV</a>
+				</h1>
+			</div>	
+			<div id="area-menu">
+				<div id="conteudo-menu">
+					<div id="menu-locais">
+						<span class="locais">
+							Rio de janeiro - São Paulo - Rio Grande do Norte
+						</span>
+						<a class="reserva" href="">Reservar</a>
+						<div style="clear: both;"></div>
+					</div>
+					<div id="menu">
+						<ul id="navegacao">
+							<li><a href="">Home</a></li>
+							<li><a href="">História</a></li>
+							<li><a href="">Imprensa</a></li>
+							<li><a href="">Gastronomia</a></li>
+							<li><a href="">Contato</a></li>
+						</ul>
+						
+
+						
+						<img class="depoimento" src="{{ url_for ('static', filename='depoimento.png') }}">
+					</div>
+
+				</div>
+			</div>
+			
+		</div><!--/ fim topo -->
+
+		<div id="area-principal">
+			<div class="conteudo">
+			<h2>
+				Que tal passar as férias de verão hospedado em um resort cinco estrelas à beira-mar ? </br>All-Inclusive, com cinco restaurantes e três bares ao dispor.</br>
+				A diversão tem sua vez no complexo aquático com quatro piscinas, centro esportivo e kids club com oficinas, práticas de culinária, karaokê, etc.</br>
+				Mediante custo à parte, hóspedes podem também desfrutar do Kensho Spa Zen e conhecer mais do destino com passeios turísticos.
+			</h2>
+
+			
+				
+			</div>
+		</div>
+
+		<div id="area-lateral">
+			<div class="conteudo">
+
+				<ul id="beneficios">
+					<li>
+						<a href="">
+
+							<img src="{{ url_for ('static', filename='apartamento.jpg') }}">
+							<h3>Apartamento</h3>
+							
+
+						</a>
+					</li>
+
+					<li>
+						<a href="">
+
+							<img src="{{ url_for ('static', filename='piscina.jpg') }}">							
+                            <h3>Piscina</h3>
+							
+							
+						</a>
+					</li>
+
+
+					<li>
+						<a href="">
+
+							<img src="{{ url_for ('static', filename='restaurante.jpg') }}">
+							<h3>Restaurante</h3>
+							
+
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+
+		<div id="rodape">
+			<span>
+				&copy; Copyright 2020-2022  Hotel DV
+			</span>
+		</div>
+
+		
+
+	</div><!--/ fim container-->
+
+
 </body>
 </html>
+
+
